@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dismissal-board
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: PASSCODE
+        value: "2468"

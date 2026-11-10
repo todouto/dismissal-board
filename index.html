@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f8fb">
+<title>放学状态</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="live" id="live" title="实时同步"></span>
+    <h1 id="title">放学状态</h1>
+  </div>
+  <div class="meta">
+    <div class="summary" id="summary"></div>
+    <div class="clock" id="clock">--:--:--</div>
+  </div>
+</header>
+
+<main class="board" id="board" aria-live="polite">
+  <div class="loading">正在连接…</div>
+</main>
+
+<footer class="foot">
+  <span id="date"></span>
+  <span class="legend">
+    <i class="sw done"></i>已放学
+    <i class="sw undo"></i>未放学
+  </span>
+  <a class="tlink" href="/teacher">教师登录</a>
+</footer>
+
+<script src="/visitor.js"></script>
+</body>
+</html>
